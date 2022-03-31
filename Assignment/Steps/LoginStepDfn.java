@@ -3,6 +3,7 @@ package week6.day1.stepdefn;
 import org.openqa.selenium.By;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.But;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -26,5 +27,11 @@ public class LoginStepDfn extends W6D1BaseClass {
 		boolean pgTxt = driver.findElement(By.xpath("//div[text()='" + pageText + "']")).isDisplayed();
 		System.out.println(pageText + " is " + pgTxt);
 	}
+
+	/*
+	 * @But("Username or Password is incorrect") public void
+	 * Username_or_Password_is_incorrect() {
+	 * System.out.println("Username or Password is incorrect"); }
+	 */
 
 }
